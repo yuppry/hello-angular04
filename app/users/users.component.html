@@ -28,7 +28,7 @@
       }"
     />
     <!-- show errors -->
-    <div *ngIf="loginForm.controls.lastName.errors" class="invalid-feedback">
+    <div *ngIf="submitted && loginForm.controls.lastName.errors" class="invalid-feedback">
       <div *ngIf="loginForm.controls.lastName.errors.required">
         Last name is required
       </div>
